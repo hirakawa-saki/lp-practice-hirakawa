@@ -1,0 +1,281 @@
+@charset "utf-8";
+
+/* 共通スタイル 
+------------------------------*/
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.inner {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.LP-all {
+  width: 100%;
+}
+
+.section-title {
+  font-size: 40px;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+/* header
+------------------------------*/
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 0 10%
+}
+
+.header-logo {
+  color: #777;
+  margin: 10px;
+}
+
+.btn {
+  color: #fff;
+  background-color: #6ba7eb;
+  font-size: 12px;
+  height: 35px;
+  padding: 12px 14px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.btn:hover {
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+
+/* キービュー 
+------------------------------*/
+
+.key-visual {
+  background-image: url(../img/keyvisual/keyvisual.jpg);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+}
+
+.kv-container {
+  margin: 0 auto;
+}
+
+.kv-title {
+  font-size: 65px;
+  font-weight: 700;
+  color: #6ba7eb;
+  margin-bottom: 30px;
+  padding-top: 400px;
+  text-align: center;
+}
+
+.sub-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  padding-bottom: 400px;
+  text-align: center;
+}
+
+/* Work
+------------------------------*/
+
+.work {
+  background: #e3f2fd;
+}
+
+.work-container {
+  display: flex;
+  padding: 0 10%;
+  padding-top: 50px;
+}
+
+.work-text {
+  margin-left: 60px;
+}
+
+.PC-Icon {
+  width: 250px;
+}
+
+.w-margin {
+  margin-bottom: 35px;
+  margin-top: 20px;
+}
+
+.work-content {
+  font-size: 15px;
+  line-height: 18px;
+  word-break: break-all;
+}
+
+.sub-content {
+  margin-bottom: 30px;
+}
+
+/* Skill
+------------------------------*/
+
+.skill-container {
+  padding-top: 50px;
+}
+
+.skills-menu {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 300px 300px;
+  gap: 100px;
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+.item {
+  width: 300px;
+}
+
+.item img {
+  object-fit: cover;
+  height: 300px;
+  width: 300px;
+  opacity: 0.7;
+}
+
+.item img:hover {
+  opacity: 1;
+}
+
+/* plan
+------------------------------*/
+
+table {
+  width: 100%
+}
+
+.plan {
+  background-color: #d0dfea;
+}
+
+.plan-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.plan-list {
+  table-layout: fixed;
+  margin: auto;
+}
+
+.plan-list th {
+  background-color: #6ba7eb;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.plan-list th,
+.plan-list td {
+  border-left: 2px solid #fff;
+  padding: 10px;
+}
+
+.plan-list td {
+  text-align: center;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.plan-list tr {
+  background-color: #f9f9f9;
+}
+
+.plan-list tr:nth-child(even) {
+  background-color: #e0efff;
+}
+
+td:first-child {
+  border: none;
+}
+
+th:first-child {
+  border: none;
+}
+
+.margin {
+  margin-bottom: 50px;
+}
+
+/* sns
+------------------------------*/
+
+.sns {
+  background-color: #e3f2fd;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.sns-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.sns-btn a:hover {
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+.logo-item {
+  width: 185px;
+  overflow: hidden;
+  font-size: 40px;
+}
+
+.sns-btn a {
+  color: #8c8c8c;
+}
+
+/* footer
+------------------------------*/
+
+.footer {
+  background-color: #cfd8dc;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
+.copyrighting {
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  text-align: right;
+}
+
+
+/* ================TAB================ */
+
+@media screen and (max-width:1199px) {}
+
+
+/* ================SP================ */
+
+@media screen and (max-width:767px) {}
