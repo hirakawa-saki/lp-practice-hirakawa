@@ -72,12 +72,16 @@ a {
 /* キービュー 
 ------------------------------*/
 
+main {
+  margin-top: 68px;
+}
+
 .key-visual {
   background-image: url(../img/keyvisual/keyvisual.jpg);
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
-  padding: 400px 0 400px;
+  padding:400px 0 400px;
 
 }
 
@@ -166,6 +170,7 @@ a {
 
 .item img:hover {
   opacity: 1;
+  transition: all 0.7s ease;
 }
 
 /* plan
@@ -244,7 +249,7 @@ th:first-child {
 }
 
 .logo-item {
-  margin:0 92px 0;
+  padding:0 92px 0;
   overflow: hidden;
   font-size: 40px;
 }
