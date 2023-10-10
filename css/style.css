@@ -285,10 +285,57 @@ th:first-child {
 @media screen and (max-width:1199px) {}
 
 
+.inner {
+  max-width: 97%;
+  margin: 0 auto;
+}
 
 
+  /*キービジュアル
+------------------------------*/
+
+.key-visual {
+  padding: 250px 0 250px;
+  max-width: 100%;
+  height: auto;
+}
 
 
+  /* Work
+------------------------------*/
+
+.work {
+  padding-bottom:50px;
+}
+
+.work-container {
+  display: block;
+  text-align: center;
+}
+
+.work-text {
+  margin: auto;
+}
+
+  /* Skill
+------------------------------*/
+
+.skills-menu {
+  display: block;
+  margin-top: 50px;
+}
+
+.item img {
+  max-width: 100%;
+}
+
+.item {
+  margin: 0 auto;
+}
+
+.skills-menu > li:nth-child(3) {
+  margin-bottom: 80px;
+}
 
 
 
