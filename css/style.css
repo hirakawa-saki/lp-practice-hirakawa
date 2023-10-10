@@ -72,6 +72,10 @@ a {
   transition: all 0.3s ease;
 }
 
+.drawer_hidden, .drawer_open {
+  display: none;
+}
+
 
 /* キービュー 
 ------------------------------*/
@@ -387,12 +391,14 @@ th:first-child {
   .skills-menu {
     display: block;
     text-align: center;
+    margin: 0 auto;
     margin-top: 50px;
   }
 
   .item img {
     max-width: 100%;
   }
+
 
 
 }
