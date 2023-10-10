@@ -31,6 +31,10 @@ a {
   text-align: center;
 }
 
+.drawer_hidden {
+  display: none;
+}
+
 /* header
 ------------------------------*/
 
@@ -45,13 +49,13 @@ a {
 
 .header-logo {
   color: #777;
-  margin: 10px;
 }
 
 .header-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 15px;
 }
 
 .btn {
@@ -81,7 +85,7 @@ main {
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
-  padding:400px 0 400px;
+  padding: 400px 0 400px;
 
 }
 
@@ -249,7 +253,7 @@ th:first-child {
 }
 
 .logo-item {
-  padding:0 92px 0;
+  padding: 0 92px 0;
   overflow: hidden;
   font-size: 40px;
 }
@@ -263,7 +267,7 @@ th:first-child {
 
 .footer {
   background-color: #cfd8dc;
-  padding:20px 0 25px;
+  padding: 20px 0 25px;
 }
 
 .copyrighting {
@@ -280,4 +284,115 @@ th:first-child {
 
 /* ================SP================ */
 
-@media screen and (max-width:767px) {}
+@media screen and (max-width:767px) {
+
+  .inner {
+    width: 97%;
+    margin: 0 auto;
+  }
+
+
+  /*header ハンバーガー
+------------------------------*/
+
+  .btn {
+    display: none;
+  }
+
+
+  .drawer_open {
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+    cursor: pointer;
+  }
+
+  .drawer_open span,
+  .drawer_open span:before,
+  .drawer_open span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background: #333;
+    transition: 0.5s;
+    position: absolute;
+  }
+
+  .drawer_open span:after {
+    top: 8px;
+  }
+
+  .drawer_open span:before {
+    bottom: 8px;
+  }
+
+  #drawer_input:checked~.drawer_open span {
+    background: rgba(255, 255, 255, 0);
+  }
+
+  #drawer_input:checked~.drawer_open span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+  }
+
+  #drawer_input:checked~.drawer_open span::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+
+
+
+  /*キービジュアル
+------------------------------*/
+
+  .kv-title {
+    font-size: 40px;
+  }
+
+  .sub-title {
+    font-size: 30px;
+  }
+
+  .key-visual {
+    padding: 200px 0 200px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Work
+------------------------------*/
+
+  .work {
+    padding-bottom: 10px;
+  }
+
+  .work-container {
+    display: block;
+    text-align: center;
+  }
+
+  .work-text {
+    margin: auto;
+  }
+
+  /* Skill
+------------------------------*/
+
+  .skills-menu {
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .item img {
+    max-width: 100%;
+  }
+
+
+}
